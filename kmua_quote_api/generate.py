@@ -1,8 +1,9 @@
-from PIL import Image, ImageFont
-from pilmoji import Pilmoji
 import io
 from pathlib import Path
+
 from loguru import logger
+from PIL import Image, ImageFont
+from pilmoji import Pilmoji
 
 
 def generate_quote_img(avatar: bytes, text: str, name: str) -> bytes:

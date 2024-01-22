@@ -2,13 +2,13 @@ import io
 import time
 
 import uvicorn
-from fastapi import FastAPI, File, Form, HTTPException, UploadFile, Request
+from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
-from kmua_quote_api.generate import generate_quote_img
 from loguru import logger
-from kmua_quote_api.config import settings
 
+from kmua_quote_api.config import settings
+from kmua_quote_api.generate import generate_quote_img
 
 app = FastAPI(
     title="kmua Quote API",

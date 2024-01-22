@@ -1,5 +1,6 @@
-from dynaconf import Dynaconf
 from pathlib import Path
+
+from dynaconf import Dynaconf
 
 _BASE_DIR = Path(__file__).resolve().parent.parent
 
